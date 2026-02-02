@@ -1,0 +1,137 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <a href="/">Trang chủ</a> > <a href="/products">Cửa Hàng</a> > {{ productDetail.name }}
+</div>
+
+<div class="product-detail-container">
+  <!-- Left: Product Images -->
+  <div class="product-images-section">
+    <div class="main-image">
+      <img [src]="productDetail.image" [alt]="productDetail.name" />
+    </div>
+    <div class="thumbnail-images">
+      <img [src]="productDetail.image" [alt]="productDetail.name" class="thumbnail" />
+      <img [src]="productDetail.image" [alt]="productDetail.name" class="thumbnail" />
+      <img [src]="productDetail.image" [alt]="productDetail.name" class="thumbnail" />
+      <img [src]="productDetail.image" [alt]="productDetail.name" class="thumbnail" />
+    </div>
+  </div>
+
+  <!-- Right: Product Details -->
+  <div class="product-details-section">
+    <!-- Title -->
+    <h1 class="product-title">{{ productDetail.name }}</h1>
+
+    <!-- Flash Sale Timer -->
+
+
+    <!-- Price Section -->
+    <div class="price-section">
+      <span class="original-price">1.000.000đ</span>
+      <span class="sale-price">{{ productDetail.price | number:'1.0-0' }}đ</span>
+      <span class="discount-badge">Giảm 23%</span>
+    </div>
+
+    <!-- Quantity and Actions -->
+    <div class="purchase-section">
+      <div class="quantity-control">
+        <button class="qty-btn">-</button>
+        <input type="number" class="qty-input" value="1" min="1" />
+        <button class="qty-btn">+</button>
+      </div>
+      <button class="btn-add-cart" (click)="openConfirmDialog()">THÊM VÀO GIỎ</button>
+
+      <button class="btn-buy-now">
+        <a href="tel:555-555-5555" class="phone">    MUA NGAY</a>
+    
+    </button>
+    </div>
+
+    <!-- Shipping Info -->
+    <div class="shipping-info">
+      <div class="info-item">
+        <mat-icon>local_shipping</mat-icon>
+        <div>
+          <strong>Miễn phí vận chuyển toàn quốc</strong>
+          <p>Áp dụng cho đơn hàng từ 500.000đ</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <mat-icon>local_offer</mat-icon>
+        <div>
+          <strong>Miễn phí giao hàng hôm tác</strong>
+          <p>Áp dụng tại TP.HCM cho đơn hàng từ 500.000đ</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="benefits-section">
+      <h3>ƯU ĐÃI YẾN VÀNG</h3>
+      <ul>
+        <li><mat-icon>check_circle</mat-icon> Giao hàng miễn phí toàn quốc với đơn hàng từ 500.000đ</li>
+        <li><mat-icon>check_circle</mat-icon> Nhận ngay siêu tối trong nội thành TP.HCM</li>
+        <li><mat-icon>check_circle</mat-icon> Sản phẩm chính hãng, tính khiết 100%</li>
+        <li><mat-icon>check_circle</mat-icon> Tặng kèm theo đường phèn cùng bộ hộp và tủi giấy sang trọng</li>
+        <li><mat-icon>check_circle</mat-icon> Bồi hoàn 1000% nếu sản phẩm không như cam kết</li>
+      </ul>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info-section">
+      <h3>THÔNG TIN CHI TIẾT SẢN PHẨM</h3>
+      <table class="info-table">
+        <tr>
+          <td class="label">Nhóm</td>
+          <td>Tinh Chế</td>
+        </tr>
+        <tr>
+          <td class="label">Loại</td>
+          <td>Bạch yến</td>
+        </tr>
+        <tr>
+          <td class="label">Khối lượng</td>
+          <td>100gr (15-17 tổ/hộp)</td>
+        </tr>
+        <tr>
+          <td class="label">Bộ sản phẩm</td>
+          <td>
+            <ul class="product-list">
+              <li>100gr Bạch Yến Tinh Chế Vụn</li>
+              <li>1 Hộp đường phèn</li>
+              <li>1 Bộ hộp và tủi giấy sang trọng</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Đặc trưng</td>
+          <td>Sạch lông, màu trắng ánh kim, được tạo hình bằng khuôn hình cánh sen, không sợi, không nát</td>
+        </tr>
+        <tr>
+          <td class="label">Mùi</td>
+          <td>Tanh nhẹ đặc trưng (mùi biển)</td>
+        </tr>
+        <tr>
+          <td class="label">Bảo quản</td>
+          <td>3 năm theo chỉ định bảo quản</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="trust-badges">
+      <div class="badge">
+        <mat-icon>schedule</mat-icon>
+        <p>7 ngày miễn phí trả hàng</p>
+      </div>
+      <div class="badge">
+        <mat-icon>verified</mat-icon>
+        <p>Hàng chính hãng 100%</p>
+      </div>
+      <div class="badge">
+        <mat-icon>local_shipping</mat-icon>
+        <p>Miễn phí vận chuyển</p>
+      </div>
+    </div>
+  </div>
+</div>

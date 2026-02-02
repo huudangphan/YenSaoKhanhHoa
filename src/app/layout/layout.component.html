@@ -1,0 +1,44 @@
+<!-- Top Navigation -->
+<mat-toolbar class="top-bar">
+  <div class="toolbar-container">
+  <a mat-button routerLink="/" class="nav-link logo-menu">
+  <img src="assets/images/logo.png" alt="YenSao Logo" />
+</a>
+
+    <span class="spacer"></span>
+    <div class="nav-links">
+      <a mat-button routerLink="/" class="nav-link">Trang chủ</a>
+   
+      <a mat-button class="nav-link" routerLink="/about" >Về chúng tôi</a>
+      <!-- <a mat-button class="nav-link">
+        Sản phẩm
+     
+    </a> -->
+
+   <div matButton [matMenuTriggerFor]="menu" class="nav-link">Sản phẩm</div>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item>Yến tươi</button>
+        <button mat-menu-item>Yến khô</button>
+        </mat-menu> 
+
+      <button mat-icon-button routerLink="/cart">
+         <mat-icon>shopping_cart</mat-icon>
+      </button>
+      <button mat-icon-button class="search-btn">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
+
+<a href="https://zalo.me/0817229649" target="_blank" rel="noopener noreferrer">
+  <button class="zalo-floating-btn">
+   
+  <img src="assets/images/zalo.jpg" alt="YenSao Logo" class="logo" />
+  </button>
+</a>
+
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

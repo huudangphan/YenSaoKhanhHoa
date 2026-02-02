@@ -1,0 +1,21 @@
+<div class="hero-banner">
+  <div class="hero-content">
+ 
+    <button mat-raised-button class="explore-btn">KHÁM PHÁ NGAY</button>
+  </div>
+</div>
+
+<!-- Feature Highlights -->
+<section class="features-section">
+  <h2 class="section-title">GIÁ TRỊ NỔI BẬT</h2>
+  <div class="features-grid">
+    <div class="feature-item" *ngFor="let feature of features">
+      <mat-icon class="feature-icon">{{ feature.icon }}</mat-icon>
+      <p class="feature-text">{{ feature.text }}</p>
+    </div>
+  </div>
+</section>
+<app-products></app-products>
+
+
+<app-footer></app-footer>

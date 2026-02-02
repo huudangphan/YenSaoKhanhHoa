@@ -1,0 +1,29 @@
+<section class="featured-products-section">
+  <h2 class="section-title">SẢN PHẨM NỔI BẬT</h2>
+  <div class="carousel-wrapper">
+    <button class="arrow left" (click)="prevSlide()">&#10094;</button>
+    <div class="carousel">
+      <div class="product-card" *ngFor="let product of visibleFeaturedProducts" (click)="goToProductDetail(product.id)" style="cursor: pointer;">
+        <img [src]="product.image" [alt]="product.name" />
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price | number:'1.0-0' }}đ</p>
+        <button (click)="openConfirmDialog(product.id); $event.stopPropagation()">Thêm vào giỏ</button>
+      </div>
+    </div>
+    <button class="arrow right" (click)="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="category-section">
+  <h2 class="section-title">YẾN SÀO LOẠI 1</h2>
+  <div class="category-grid">
+    <div class="product-card" *ngFor="let product of categoryProducts" (click)="goToProductDetail(product.id)" style="cursor: pointer;">
+      <img [src]="product.image" [alt]="product.name" />
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.price | number:'1.0-0' }}đ</p>
+      <button (click)="openConfirmDialog(product.id); $event.stopPropagation()">Thêm vào giỏ</button>
+    </div>
+  </div>
+</section>

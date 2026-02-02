@@ -1,0 +1,38 @@
+<div class="cart-container">
+  <div class="cart-header">
+    <h2>Giỏ hàng của bạn</h2>
+    <p>Tổng sản phẩm: <span>{{ totalCount }}</span></p>
+    <button class="btn warning" (click)="clearCart()">Xóa giỏ hàng</button>
+  </div>
+
+  <div class="cart-items">
+    <div class="cart-item" *ngFor="let item of cartItems">
+      <img [src]="item.image" [alt]="item.name" />
+      <div class="cart-item-details">
+        <h4>{{ item.name }}</h4>
+        <p>{{ item.price | number }}₫</p>
+
+<mat-form-field appearance="fill">
+  <mat-label>Số lượng</mat-label>
+  <input matInput type="number"
+         min="0" max="100" step="1"
+         [(ngModel)]="item.total"
+         (ngModelChange)="updateItemQuantity()" />
+</mat-form-field>
+
+
+
+      </div>
+      <div class="cart-item-actions">
+        <button class="btn danger" (click)="removeItem(item.id)">Xóa</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-summary">
+    <p>Tổng cộng: <span>{{ totalPrice | number }}₫</span></p>
+      <button class="btn update" (click)="updatecart()">Cập nhật giỏ hàng</button>
+    <button class="btn primary">Thanh toán</button>
+    
+    </div>
+</div>
