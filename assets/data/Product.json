@@ -1,9 +1,92 @@
 [
-  { "id": 1, "name": "Yến sào hộp 100g (có kèm hộp, túi xách)", "price": 3000000, "image": "assets/images/yen_1_hop.jpg" },
-  { "id": 2, "name": "Yến sào hộp 100g", "price": 2950000, "image": "assets/images/yen_1.jpg" },
-    { "id": 3, "name": "Yến sào hộp 50g", "price": 1600000, "image": "assets/images/yen_05.jpg" },
-   { "id": 4, "name": "Yến sào hộp 50g (có kèm hộp, túi xách)", "price": 1600000, "image": "assets/images/yen_05.jpg" },
-  { "id": 5, "name": "Yến thô chưa chế biến 100g", "price": 1100000, "image": "assets/images/yen_tho.jpg" },
-  { "id": 6, "name": "Yến thô chưa chế biến 50g", "price": 600000, "image": "assets/images/yen_tho2.jpg" }
- 
+  {
+    "id": 1,
+    "name": "Yến sào hộp 100g (có kèm hộp, túi xách)",
+    "price": 3000000,
+    "image": "assets/images/yen_1_hop.jpg",
+    "group": "Tinh chế",
+    "Includes":[
+      "100g yến sào tinh chế cao cấp",
+      "1 hộp đựng yến sang trọng",
+      "1 túi xách tiện lợi", "1 hộp đường phèn"
+    ]
+    ,
+    "weight": "100g (10-12 tổ/hộp)",
+    "mui": "Tanh nhẹ đặc trưng (mùi biển)",
+    "signature": "Sạch lông, màu trắng ánh kim, được tạo hình bằng khuôn hình cánh sen, không sợi, không nát"
+  },
+  {
+    "id": 2,
+    "name": "Yến sào hộp 100g",
+    "price": 2950000,
+    "image": "assets/images/yen_1.jpg",
+    "group": "Tinh chế",
+    "Includes":[
+      "100g yến sào tinh chế cao cấp",
+     "1 hộp đường phèn"
+    ],
+       "weight": "100g (10-12 tổ/hộp)",
+        "mui": "Tanh nhẹ đặc trưng (mùi biển)",
+            "signature": "Sạch lông, màu trắng ánh kim, được tạo hình bằng khuôn hình cánh sen, không sợi, không nát"
+  },
+  {
+    "id": 3,
+    "name": "Yến sào hộp 50g",
+    "price": 1600000,
+    "image": "assets/images/yen_05.jpg",
+    "group": "Tinh chế",
+    "Includes":[
+      "100g yến sào tinh chế cao cấp",
+      "1 hộp đựng yến sang trọng",
+      "1 túi xách tiện lợi", "1 hộp đường phèn"
+    ],
+    "weight": "50g (5-6 tổ/hộp)",
+     "mui": "Tanh nhẹ đặc trưng (mùi biển)",
+         "signature": "Sạch lông, màu trắng ánh kim, được tạo hình bằng khuôn hình cánh sen, không sợi, không nát"
+  },
+  {
+    "id": 4,
+    "name": "Yến sào hộp 50g (có kèm hộp, túi xách)",
+    "price": 1600000,
+    "image": "assets/images/yen_05.jpg",
+    "group": "Tinh chế",
+    "Includes":[
+      "100g yến sào tinh chế cao cấp",
+      "1 hộp đựng yến sang trọng",
+      "1 túi xách tiện lợi", "1 hộp đường phèn"
+    ],
+       "weight": "50g (5-6 tổ/hộp)",
+        "mui": "Tanh nhẹ đặc trưng (mùi biển)",
+            "signature": "Sạch lông, màu trắng ánh kim, được tạo hình bằng khuôn hình cánh sen, không sợi, không nát"
+  },
+  {
+    "id": 5,
+    "name": "Yến thô chưa chế biến 100g",
+    "price": 2400000,
+    "image": "assets/images/yen_tho.jpg",
+    "group": "Nguyên chất",
+    "Includes":[
+      "100g yến sào tinh chế cao cấp",
+      "1 hộp đựng yến sang trọng",
+      "1 túi xách tiện lợi",     "1 hộp đường phèn"
+    ],
+    "weight": "100g (10-12 tổ/hộp)",
+     "mui": "Tanh nhẹ đặc trưng (mùi biển)",
+         "signature": "Còn lông, yến được nuôi trong môi trường vách đá nhân tạo nên không bị bám mốc hay vụn gỗ"
+  },
+  {
+    "id": 6,
+    "name": "Yến thô chưa chế biến 50g",
+    "price": 1300000,
+    "image": "assets/images/yen_tho2.jpg",
+    "group": "Nguyên chất",
+    "Includes":[
+      "100g yến sào nguyên chất",
+      "1 hộp đựng yến sang trọng",
+      "1 túi xách tiện lợi",     "1 hộp đường phèn"
+    ],
+       "weight": "50g (5-6 tổ/hộp)",
+        "mui": "Tanh nhẹ đặc trưng (mùi biển)",
+               "signature": "Còn lông, yến được nuôi trong môi trường vách đá nhân tạo nên không bị bám mốc hay vụn gỗ"
+  }
 ]
