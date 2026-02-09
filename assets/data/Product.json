@@ -1,8 +1,8 @@
 [
-  {
+ {
     "id": 1,
     "name": "Yến sào hộp 100g (có kèm hộp, túi xách)",
-    "price": 3000000,
+    "price": 2990000,
     "image": "assets/images/yen_1_hop.jpg",
     "group": "Tinh chế",
     "Includes":[
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Yến sào hộp 100g",
-    "price": 2950000,
+    "price": 2900000,
     "image": "assets/images/yen_1.jpg",
     "group": "Tinh chế",
     "Includes":[
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "name": "Yến sào hộp 50g",
-    "price": 1600000,
+    "price": 1590000,
     "image": "assets/images/yen_05.jpg",
     "group": "Tinh chế",
     "Includes":[
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "name": "Yến sào hộp 50g (có kèm hộp, túi xách)",
-    "price": 1600000,
+    "price": 1590000,
     "image": "assets/images/yen_05.jpg",
     "group": "Tinh chế",
     "Includes":[
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "name": "Yến thô chưa chế biến 100g",
-    "price": 2400000,
+    "price": 2390000,
     "image": "assets/images/yen_tho.jpg",
     "group": "Nguyên chất",
     "Includes":[
@@ -77,7 +77,7 @@
   {
     "id": 6,
     "name": "Yến thô chưa chế biến 50g",
-    "price": 1300000,
+    "price": 1290000,
     "image": "assets/images/yen_tho2.jpg",
     "group": "Nguyên chất",
     "Includes":[
